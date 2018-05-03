@@ -1,0 +1,37 @@
+
+router12#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+router12(config)#
+router12(config)#
+router12(config)#
+router12(config)#hostname router12
+router12(config)#
+router12(config)#
+router12(config)#
+router12(config)#interface Ethernet0/2
+router12(config-if)#
+router12(config-if)# ip address 1.1.2.7 255.255.255.0
+router12(config-if)#
+router12(config-if)# shutdown
+router12(config-if)#
+router12(config-if)#!
+router12(config-if)#
+router12(config-if)#interface Ethernet0/3
+router12(config-if)#
+router12(config-if)# ip address 2.3.2.2 255.255.255.0
+router12(config-if)#
+router12(config-if)# shutdown
+router12(config-if)#
+router12(config-if)#!
+router12(config-if)#
+router12(config-if)#end
+router12#
+router12#!
+router12#
+router12#
+router12#
+router12#copy running-config startup-config
+Destination filename [startup-config]? 
+Building configuration...
+Compressed configuration from 1422 bytes to 915 bytes[OK]
+router12#

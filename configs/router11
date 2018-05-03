@@ -1,0 +1,16 @@
+conf t
+
+hostname router11
+
+interface Ethernet0/2
+ ip address 1.1.2.9 255.255.255.0
+ shutdown
+!
+interface Ethernet0/3
+ ip address 2.3.2.1 255.255.255.0
+ shutdown
+!
+end
+!
+
+copy running-config startup-config
